@@ -18,7 +18,12 @@ namespace math{
         return Vec2(x * s, y * s);
     }
 
-    Vec2 Vec2::add_inplace(const Vec2& other) {
+    void Vec2::scale_inplace(double s) {
+        x *= s;
+        y *= s;
+    }
+
+    void Vec2::add_inplace(const Vec2& other) {
         x += other.x;
         y += other.y;
     }

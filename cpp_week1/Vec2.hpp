@@ -13,9 +13,10 @@ namespace math{
         double length() const;
         Vec2 add(const Vec2& other) const;
         Vec2 scale(double s) const;
+        void scale_inplace(double s);
 
         // In-place addition
-        Vec2 add_inplace(const Vec2& other);
+        void add_inplace(const Vec2& other);
         Vec2& add_inplace2(const Vec2& other);
     };
 }
