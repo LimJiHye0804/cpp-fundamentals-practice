@@ -16,3 +16,14 @@ Vec2 Vec2::add(const Vec2& other) const {
 Vec2 Vec2::scale(double s) const {
     return Vec2(x * s, y * s);
 }
+
+Vec2 Vec2::add_inplace(const Vec2& other) {
+    x += other.x;
+    y += other.y;
+}
+
+Vec2& Vec2::add_inplace2(const Vec2& other) {
+    x += other.x;
+    y += other.y;
+    return *this;
+}
